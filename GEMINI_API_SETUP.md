@@ -177,3 +177,5 @@ For technical support or questions about the Gemini API integration:
 ---
 
 **Note**: This chatbot is designed for demonstration purposes. In production, ensure compliance with data privacy regulations and implement proper security measures.
+
+

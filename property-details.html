@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - Reyval Properties</title>
+    <link rel="icon" type="image/png" href="Reyval Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <p><strong>DISCLAIMER:</strong> This is a test website for demonstration purposes only.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="dropdown">
+                    <a href="properties.html" class="nav-link active">Properties <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Property Hero Section -->
+    <section class="property-hero">
+        <div class="container">
+            <div class="property-hero-content">
+                <h1 id="property-title">Property Details</h1>
+                <p class="location" id="property-location">Location</p>
+                <p class="price" id="property-price">Price</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Details Section -->
+    <section class="property-details">
+        <div class="container">
+            <div class="property-layout">
+                <div class="property-main">
+                    <div class="property-images">
+                        <div class="main-image">
+                            <img id="property-main-image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Property Main Image">
+                        </div>
+                        <div class="image-gallery">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Property Gallery">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Property Gallery">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Property Gallery">
+                        </div>
+                    </div>
+
+                    <div class="property-description">
+                        <h3>Property Description</h3>
+                        <p id="property-description">This beautiful property offers exceptional living space with modern amenities and prime location. Perfect for families looking for comfort and luxury.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul id="property-features">
+                            <li>Modern kitchen with stainless steel appliances</li>
+                            <li>Spacious living areas with natural light</li>
+                            <li>Private outdoor space</li>
+                            <li>Updated bathrooms</li>
+                            <li>Central air conditioning</li>
+                            <li>Attached garage</li>
+                        </ul>
+
+                        <h3>Property Details</h3>
+                        <div class="property-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span id="property-beds">3 Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span id="property-baths">2 Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span id="property-sqft">1,850 sq ft</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-car"></i>
+                                <span id="property-garage">2 Car Garage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-sidebar">
+                    <div class="contact-form-card">
+                        <h3>Interested in this property?</h3>
+                        <form class="property-contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">I'm interested in...</option>
+                                    <option value="buying">Buying this property</option>
+                                    <option value="viewing">Scheduling a viewing</option>
+                                    <option value="more-info">Getting more information</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Additional comments..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="agent-info">
+                        <h3>Contact Agent</h3>
+                        <div class="agent-details">
+                            <img src="john-andrei-photo.png" alt="John Andrei Nañola">
+                            <div>
+                                <h4>John Andrei Nañola</h4>
+                                <p>Founder & CEO</p>
+                                <p><i class="fas fa-phone"></i> (323) 555-4821</p>
+                                <p><i class="fas fa-envelope"></i> john@reyvalproperties.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Properties Section -->
+    <section class="similar-properties">
+        <div class="container">
+            <h2>Similar Properties</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Similar Property">
+                    <div class="property-content">
+                        <h3>Beverly Hills Estate</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Beverly Hills, CA 90210</p>
+                        <p class="price">$3,200,000</p>
+                        <p class="details">4 bed • 3.5 bath • 3,200 sq ft</p>
+                        <a href="property-details.html?id=beverly-hills" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Similar Property">
+                    <div class="property-content">
+                        <h3>Pacific Palisades Villa</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Pacific Palisades, CA 90272</p>
+                        <p class="price">$2,800,000</p>
+                        <p class="details">5 bed • 4 bath • 2,800 sq ft</p>
+                        <a href="property-details.html?id=pacific-palisades" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                    </div>
+                    <p>Modern Living • Prime Locations • Trusted Deals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="sell.html">Sell Property</a></li>
+                        <li><a href="buy.html">Buy Property</a></li>
+                        <li><a href="rent.html">Rent Property</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 4821 Pacific Crest Ave<br>Los Angeles, CA 90017</p>
+                    <p><i class="fas fa-phone"></i> (323) 555-4821</p>
+                    <p><i class="fas fa-envelope"></i> reyvalproperties@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 by Reyval Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Reyval Properties Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help you with all your real estate needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+                 // Property data object
+         const properties = {
+             'encino-home': {
+                 title: '5349 Newcastle Ave',
+                 location: 'Encino, CA 91316',
+                 price: '$1,250,000',
+                 description: 'Beautiful family home in the heart of Encino with updated kitchen, spacious backyard, and excellent schools nearby. This property offers the perfect blend of comfort and luxury.',
+                 beds: '3 Bedrooms',
+                 baths: '2 Bathrooms',
+                 sqft: '1,850 sq ft',
+                 garage: '2 Car Garage',
+                 features: [
+                     'Updated kitchen with granite countertops',
+                     'Spacious family room with fireplace',
+                     'Large backyard with pool',
+                     'Excellent school district',
+                     'Central air conditioning',
+                     'Attached 2-car garage'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'van-nuys-condo': {
+                 title: '15015 Sherman Way, Apt 316',
+                 location: 'Van Nuys, CA 91405',
+                 price: '$425,000',
+                 description: 'Modern condo in a prime Van Nuys location with contemporary amenities and convenient access to shopping and transportation.',
+                 beds: '2 Bedrooms',
+                 baths: '2 Bathrooms',
+                 sqft: '1,100 sq ft',
+                 garage: '1 Car Garage',
+                 features: [
+                     'Modern kitchen with stainless appliances',
+                     'Balcony with city views',
+                     'In-unit laundry',
+                     'Community pool and gym',
+                     'Central air conditioning',
+                     'Assigned parking space'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'porter-ranch-home': {
+                 title: '18200 Sheffield Ln',
+                 location: 'Porter Ranch, CA 91326',
+                 price: '$1,850,000',
+                 description: 'Stunning family home in the prestigious Porter Ranch neighborhood with luxury finishes and spacious layout.',
+                 beds: '4 Bedrooms',
+                 baths: '3.5 Bathrooms',
+                 sqft: '2,800 sq ft',
+                 garage: '3 Car Garage',
+                 features: [
+                     'Gourmet kitchen with island',
+                     'Master suite with spa bathroom',
+                     'Large backyard with pool',
+                     'High-end finishes throughout',
+                     'Smart home technology',
+                     'Excellent school district'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'westchester-home': {
+                 title: '8005 Georgetown Ave',
+                 location: 'Los Angeles, CA 90045',
+                 price: '$1,200,000',
+                 description: 'Charming home in Westchester with character and modern updates, perfect for families seeking comfort and style.',
+                 beds: '3 Bedrooms',
+                 baths: '2 Bathrooms',
+                 sqft: '1,600 sq ft',
+                 garage: '2 Car Garage',
+                 features: [
+                     'Updated kitchen with granite countertops',
+                     'Hardwood floors throughout',
+                     'Private backyard',
+                     'Fireplace in living room',
+                     'Central air conditioning',
+                     'Attached garage'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'sherman-oaks-home': {
+                 title: '4634 Nagle Ave',
+                 location: 'Sherman Oaks, CA 91423',
+                 price: '$1,650,000',
+                 description: 'Elegant home in the heart of Sherman Oaks with luxury amenities and prime location near shopping and dining.',
+                 beds: '4 Bedrooms',
+                 baths: '3 Bathrooms',
+                 sqft: '2,200 sq ft',
+                 garage: '2 Car Garage',
+                 features: [
+                     'Chef\'s kitchen with premium appliances',
+                     'Master suite with walk-in closet',
+                     'Entertainment room',
+                     'Private pool and spa',
+                     'High-end finishes',
+                     'Prime location'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'encino-estate': {
+                 title: '17716 Alonzo Pl',
+                 location: 'Encino, CA 91316',
+                 price: '$2,100,000',
+                 description: 'Luxury estate in Encino with panoramic views, resort-style amenities, and exceptional craftsmanship.',
+                 beds: '5 Bedrooms',
+                 baths: '4.5 Bathrooms',
+                 sqft: '3,500 sq ft',
+                 garage: '3 Car Garage',
+                 features: [
+                     'Panoramic city and mountain views',
+                     'Gourmet kitchen with butler\'s pantry',
+                     'Resort-style pool and spa',
+                     'Home theater',
+                     'Wine cellar',
+                     'Smart home automation'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+            'valley-village': {
+                title: '5257 Radford Ave',
+                location: 'Valley Village, CA 91607',
+                price: '$899,000',
+                description: 'Charming bungalow in a highly desirable neighborhood with character and modern updates throughout. Perfect for first-time buyers or investors.',
+                beds: '2 Bedrooms',
+                baths: '2 Bathrooms',
+                sqft: '1,200 sq ft',
+                garage: '1 Car Garage',
+                features: [
+                    'Charming bungalow style',
+                    'Updated kitchen and bathrooms',
+                    'Hardwood floors throughout',
+                    'Private backyard',
+                    'Central air conditioning',
+                    'Single car garage'
+                ],
+                mainImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+            },
+            'beverly-hills': {
+                title: 'Beverly Hills Estate',
+                location: 'Beverly Hills, CA 90210',
+                price: '$3,200,000',
+                description: 'Stunning luxury estate with panoramic city views, gourmet kitchen, and resort-style pool and spa. The epitome of luxury living.',
+                beds: '4 Bedrooms',
+                baths: '3.5 Bathrooms',
+                sqft: '3,200 sq ft',
+                garage: '3 Car Garage',
+                features: [
+                    'Panoramic city views',
+                    'Gourmet kitchen with premium appliances',
+                    'Resort-style pool and spa',
+                    'Home theater',
+                    'Wine cellar',
+                    'Smart home technology'
+                ],
+                mainImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+            },
+            'pacific-palisades': {
+                title: 'Pacific Palisades Villa',
+                location: 'Pacific Palisades, CA 90272',
+                price: '$2,800,000',
+                description: 'Elegant villa with ocean views, private garden, and high-end finishes throughout. Perfect for entertaining and luxury living.',
+                beds: '5 Bedrooms',
+                baths: '4 Bathrooms',
+                sqft: '2,800 sq ft',
+                garage: '2 Car Garage',
+                features: [
+                    'Ocean views from multiple rooms',
+                    'Private garden and outdoor dining',
+                    'Chef\'s kitchen with island',
+                    'Master suite with spa bathroom',
+                    'Entertainment room',
+                    'High-end finishes throughout'
+                ],
+                mainImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+            },
+
+                         'san-pedro': {
+                 title: '765 W 26th St, Unit 104',
+                 location: 'San Pedro, CA 90731',
+                 price: '$2,200/month',
+                 description: 'Charming apartment in a quiet neighborhood with modern amenities and convenient access to local attractions. Perfect for renters seeking comfort and convenience.',
+                 beds: '2 Bedrooms',
+                 baths: '1 Bathroom',
+                 sqft: '850 sq ft',
+                 garage: 'Street Parking',
+                 features: [
+                     'Modern kitchen appliances',
+                     'In-unit laundry',
+                     'Balcony with views',
+                     'Central air conditioning',
+                     'Walk-in closet',
+                     'Pet friendly'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'blackburn-grove': {
+                 title: 'Blackburn Grove Apartments',
+                 location: 'Los Angeles, CA',
+                 price: '$2,800/month',
+                 description: 'Luxury apartment complex with modern amenities and prime location in Los Angeles. Perfect for professionals seeking upscale living.',
+                 beds: '2 Bedrooms',
+                 baths: '2 Bathrooms',
+                 sqft: '1,200 sq ft',
+                 garage: 'Assigned Parking',
+                 features: [
+                     'Modern kitchen with stainless appliances',
+                     'In-unit laundry',
+                     'Balcony with city views',
+                     'Community pool and fitness center',
+                     'Central air conditioning',
+                     'Pet friendly with dog park'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'monterra-ridge': {
+                 title: 'Monterra Ridge Apartments',
+                 location: 'Canoga Park, CA',
+                 price: '$2,400/month',
+                 description: 'Beautiful apartment community in Canoga Park with resort-style amenities and spacious floor plans.',
+                 beds: '2 Bedrooms',
+                 baths: '2 Bathrooms',
+                 sqft: '1,100 sq ft',
+                 garage: 'Covered Parking',
+                 features: [
+                     'Updated kitchen with granite countertops',
+                     'Private balcony',
+                     'In-unit washer/dryer',
+                     'Resort-style pool and spa',
+                     'Fitness center',
+                     'Gated community'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'urbanlux-fleur': {
+                 title: 'UrbanLux Fleur',
+                 location: 'Los Angeles, CA',
+                 price: '$3,200/month',
+                 description: 'Premium luxury apartment complex with high-end finishes and exceptional amenities in the heart of Los Angeles.',
+                 beds: '2 Bedrooms',
+                 baths: '2.5 Bathrooms',
+                 sqft: '1,350 sq ft',
+                 garage: 'Private Garage',
+                 features: [
+                     'Chef\'s kitchen with premium appliances',
+                     'Private terrace with city views',
+                     'In-unit laundry',
+                     'Rooftop pool and lounge',
+                     'Concierge service',
+                     'Smart home technology'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             },
+             'winnetka-rental': {
+                 title: '7211 Cozycroft Ave, Unit 19',
+                 location: 'Winnetka, CA 91306',
+                 price: '$1,800/month',
+                 description: 'Cozy apartment perfect for singles or couples, featuring updated appliances and a peaceful community setting.',
+                 beds: '1 Bedroom',
+                 baths: '1 Bathroom',
+                 sqft: '650 sq ft',
+                 garage: 'Street Parking',
+                 features: [
+                     'Updated kitchen appliances',
+                     'Balcony',
+                     'Central air conditioning',
+                     'Walk-in closet',
+                     'Pet friendly',
+                     'Quiet neighborhood'
+                 ],
+                 mainImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+             }
+        };
+
+        // Function to load property details
+        function loadPropertyDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const propertyId = urlParams.get('id');
+            
+            if (propertyId && properties[propertyId]) {
+                const property = properties[propertyId];
+                
+                // Update page content
+                document.getElementById('property-title').textContent = property.title;
+                document.getElementById('property-location').textContent = property.location;
+                document.getElementById('property-price').textContent = property.price;
+                document.getElementById('property-description').textContent = property.description;
+                document.getElementById('property-beds').textContent = property.beds;
+                document.getElementById('property-baths').textContent = property.baths;
+                document.getElementById('property-sqft').textContent = property.sqft;
+                document.getElementById('property-garage').textContent = property.garage;
+                document.getElementById('property-main-image').src = property.mainImage;
+                document.getElementById('property-main-image').alt = property.title;
+                
+                // Update features list
+                const featuresList = document.getElementById('property-features');
+                featuresList.innerHTML = '';
+                property.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    featuresList.appendChild(li);
+                });
+                
+                // Update page title
+                document.title = `${property.title} - Reyval Properties`;
+            }
+        }
+
+        // Load property details when page loads
+        document.addEventListener('DOMContentLoaded', loadPropertyDetails);
+    </script>
+</body>
+</html>

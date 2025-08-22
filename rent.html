@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Properties - Reyval Properties</title>
+    <link rel="icon" type="image/png" href="Reyval Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <p><strong>DISCLAIMER:</strong> This is a test website for demonstration purposes only.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="dropdown">
+                    <a href="properties.html" class="nav-link active">Properties <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="rent.html" class="active">Rent</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rent Hero Section -->
+    <section class="rent-hero">
+        <div class="container">
+            <div class="rent-hero-content">
+                <h1>Find Your Perfect Rental</h1>
+                <p>Quality homes for rent in prime Los Angeles locations</p>
+                <div class="hero-buttons">
+                    <a href="properties.html" class="btn btn-primary">View Rentals</a>
+                    <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Rentals Section -->
+    <section class="featured-rentals">
+        <div class="container">
+            <h2>Available Rentals</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="765 W 26th St, Unit 104 - San Pedro Apartment">
+                    <div class="property-content">
+                        <h3>765 W 26th St, Unit 104</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> San Pedro, CA 90731</p>
+                        <p class="price">$2,200/month</p>
+                        <p class="details">2 bed • 1 bath • 850 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=san-pedro-rental" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/765-W-26th-St-UNIT-104-San-Pedro-CA-90731/21314156_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Winnetka Apartment">
+                    <div class="property-content">
+                        <h3>7211 Cozycroft Ave, Unit 19</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Winnetka, CA 91306</p>
+                        <p class="price">$1,800/month</p>
+                        <p class="details">1 bed • 1 bath • 650 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=winnetka-rental" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/7211-Cozycroft-Ave-UNIT-19-Winnetka-CA-91306/19912034_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Blackburn Grove Apartments">
+                    <div class="property-content">
+                        <h3>Blackburn Grove Apartments</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
+                        <p class="price">$2,800/month</p>
+                        <p class="details">2 bed • 2 bath • 1,200 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=blackburn-grove" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/apartments/los-angeles-ca/blackburn-grove-by-wiseman/9MMhTs/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Monterra Ridge Apartments">
+                    <div class="property-content">
+                        <h3>Monterra Ridge Apartments</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Canoga Park, CA</p>
+                        <p class="price">$2,400/month</p>
+                        <p class="details">2 bed • 2 bath • 1,100 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=monterra-ridge" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/apartments/canoga-park-ca/monterra-ridge-apartments/CkBBdP/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="UrbanLux Fleur">
+                    <div class="property-content">
+                        <h3>UrbanLux Fleur</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
+                        <p class="price">$3,200/month</p>
+                        <p class="details">2 bed • 2.5 bath • 1,350 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=urbanlux-fleur" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/apartments/los-angeles-ca/urbanlux-fleur/5XjSGZ/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="properties.html" class="btn btn-secondary">View All Rentals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Process Section -->
+    <section class="rental-process">
+        <div class="container">
+            <h2>Our Rental Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Property Search</h3>
+                    <p>Browse our available rentals and find properties that match your needs and budget.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Property Viewing</h3>
+                    <p>Schedule a viewing at your convenience, including evenings and weekends.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Application</h3>
+                    <p>Complete our simple application process with required documentation.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Approval & Move-in</h3>
+                    <p>Once approved, we'll coordinate your move-in date and provide keys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Features Section -->
+    <section class="rental-features">
+        <div class="container">
+            <h2>Why Choose Our Rentals?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Quality Properties</h3>
+                    <p>Well-maintained homes in excellent locations throughout Los Angeles</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Process</h3>
+                    <p>Fast application processing and move-in coordination</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Professional Management</h3>
+                    <p>Dedicated property management team for maintenance and support</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Competitive Rates</h3>
+                    <p>Fair rental rates with no hidden fees or surprise charges</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-paw"></i>
+                    <h3>Pet Friendly</h3>
+                    <p>Many properties welcome pets with reasonable pet policies</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Maintenance Support</h3>
+                    <p>24/7 maintenance support for all your property needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Requirements Section -->
+    <section class="application-requirements">
+        <div class="container">
+            <h2>Application Requirements</h2>
+            <div class="requirements-grid">
+                <div class="requirement-item">
+                    <h3>Income Requirements</h3>
+                    <ul>
+                        <li>Monthly income at least 3x the rent</li>
+                        <li>Stable employment history</li>
+                        <li>Pay stubs or bank statements</li>
+                    </ul>
+                </div>
+                <div class="requirement-item">
+                    <h3>Credit & Background</h3>
+                    <ul>
+                        <li>Credit check required</li>
+                        <li>Background check for all applicants</li>
+                        <li>No eviction history</li>
+                    </ul>
+                </div>
+                <div class="requirement-item">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>Government-issued ID</li>
+                        <li>Proof of income</li>
+                        <li>References from previous landlords</li>
+                    </ul>
+                </div>
+                <div class="requirement-item">
+                    <h3>Fees & Deposits</h3>
+                    <ul>
+                        <li>Application fee: $50 per applicant</li>
+                        <li>Security deposit: 1 month rent</li>
+                        <li>First month rent due at move-in</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Application Form -->
+    <section class="rental-application">
+        <div class="container">
+            <div class="form-content">
+                <h2>Rental Application</h2>
+                <p>Start your rental application process today</p>
+                <form class="rental-application-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Current Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Employer" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" placeholder="Monthly Income" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Desired Move-in Date</option>
+                                <option value="immediate">Immediate</option>
+                                <option value="1-month">1 Month</option>
+                                <option value="2-months">2 Months</option>
+                                <option value="3-plus-months">3+ Months</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about yourself and any special requirements..." rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="rent-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your New Home?</h2>
+                <p>Contact us today to start your rental search</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                    </div>
+                    <p>Modern Living • Prime Locations • Trusted Deals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="sell.html">Sell Property</a></li>
+                        <li><a href="buy.html">Buy Property</a></li>
+                        <li><a href="rent.html">Rent Property</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 4821 Pacific Crest Ave<br>Los Angeles, CA 90017</p>
+                    <p><i class="fas fa-phone"></i> (323) 555-4821</p>
+                    <p><i class="fas fa-envelope"></i> reyvalproperties@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 by Reyval Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Reyval Properties Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help you with all your real estate needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

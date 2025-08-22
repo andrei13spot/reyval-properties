@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Properties - Reyval Properties</title>
+    <link rel="icon" type="image/png" href="Reyval Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <p><strong>DISCLAIMER:</strong> This is a test website for demonstration purposes only.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="dropdown">
+                    <a href="properties.html" class="nav-link active">Properties <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="buy.html" class="active">Buy</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buy Hero Section -->
+    <section class="buy-hero">
+        <div class="container">
+            <div class="buy-hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Discover exceptional properties in prime Los Angeles locations</p>
+                <div class="hero-buttons">
+                    <a href="properties.html" class="btn btn-primary">View Properties</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section class="featured-properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Encino Home">
+                    <div class="property-content">
+                        <h3>5349 Newcastle Ave</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Encino, CA 91316</p>
+                        <p class="price">$1,250,000</p>
+                        <p class="details">3 bed • 2 bath • 1,850 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=encino-home" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/5349-Newcastle-Ave-Encino-CA-91316/2078385493_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Van Nuys Condo">
+                    <div class="property-content">
+                        <h3>15015 Sherman Way, Apt 316</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Van Nuys, CA 91405</p>
+                        <p class="price">$425,000</p>
+                        <p class="details">2 bed • 2 bath • 1,100 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=van-nuys-condo" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/15015-Sherman-Way-APT-316-Van-Nuys-CA-91405/54944815_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Porter Ranch Home">
+                    <div class="property-content">
+                        <h3>18200 Sheffield Ln</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Porter Ranch, CA 91326</p>
+                        <p class="price">$1,850,000</p>
+                        <p class="details">4 bed • 3.5 bath • 2,800 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=porter-ranch-home" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/18200-Sheffield-Ln-Porter-Ranch-CA-91326/20234374_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Westchester Home">
+                    <div class="property-content">
+                        <h3>8005 Georgetown Ave</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA 90045</p>
+                        <p class="price">$1,200,000</p>
+                        <p class="details">3 bed • 2 bath • 1,600 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=westchester-home" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/8005-Georgetown-Ave-Los-Angeles-CA-90045/20384197_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sherman Oaks Home">
+                    <div class="property-content">
+                        <h3>4634 Nagle Ave</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sherman Oaks, CA 91423</p>
+                        <p class="price">$1,650,000</p>
+                        <p class="details">4 bed • 3 bath • 2,200 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=sherman-oaks-home" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/4634-Nagle-Ave-Sherman-Oaks-CA-91423/20023038_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Encino Estate">
+                    <div class="property-content">
+                        <h3>17716 Alonzo Pl</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Encino, CA 91316</p>
+                        <p class="price">$2,100,000</p>
+                        <p class="details">5 bed • 4.5 bath • 3,500 sq ft</p>
+                        <div class="property-actions">
+                            <a href="property-details.html?id=encino-estate" class="btn btn-primary">View Details</a>
+                            <a href="https://www.zillow.com/homedetails/17716-Alonzo-Pl-Encino-CA-91316/19950386_zpid/" target="_blank" class="btn btn-outline">View on Zillow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="properties.html" class="btn btn-secondary">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buying Process Section -->
+    <section class="buying-process">
+        <div class="container">
+            <h2>Our Buying Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Consultation</h3>
+                    <p>We'll discuss your needs, budget, and preferences to understand what you're looking for.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Property Search</h3>
+                    <p>We'll search our extensive network and off-market properties to find the perfect match.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Property Viewings</h3>
+                    <p>Schedule private viewings at your convenience, including evenings and weekends.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Offer & Negotiation</h3>
+                    <p>We'll help you make competitive offers and negotiate the best possible deal.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Closing</h3>
+                    <p>We'll guide you through the closing process and ensure everything goes smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="buying-services">
+        <div class="container">
+            <h2>Our Buying Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Property Search</h3>
+                                            <p>Access to exclusive off-market properties and comprehensive market opportunities</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Negotiation</h3>
+                    <p>Expert negotiation to get you the best possible price and terms</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Property Evaluation</h3>
+                    <p>Comprehensive property evaluation to ensure you make informed decisions</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Contract Support</h3>
+                    <p>Professional contract review and guidance throughout the process</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Inspection Coordination</h3>
+                    <p>Arrange and coordinate property inspections with trusted professionals</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Closing Support</h3>
+                    <p>Full support through the closing process to ensure a smooth transaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyer Form Section -->
+    <section class="buyer-form">
+        <div class="container">
+            <div class="form-content">
+                <h2>Tell Us What You're Looking For</h2>
+                <p>Fill out this form and we'll help you find your perfect home</p>
+                <form class="buyer-search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Preferred Location" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Property Type</option>
+                                <option value="single-family">Single Family Home</option>
+                                <option value="condo">Condo</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="multi-family">Multi-Family</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" placeholder="Min Bedrooms" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Min Bathrooms" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Min Square Feet">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" placeholder="Min Price" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Max Price" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Additional requirements or preferences..." rows="4"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Timeline to Buy</option>
+                                <option value="immediate">Immediate</option>
+                                <option value="1-3-months">1-3 Months</option>
+                                <option value="3-6-months">3-6 Months</option>
+                                <option value="6-plus-months">6+ Months</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Start Your Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="buy-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Dream Home?</h2>
+                <p>Let our expert team help you find the perfect property</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                    </div>
+                    <p>Modern Living • Prime Locations • Trusted Deals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="sell.html">Sell Property</a></li>
+                        <li><a href="buy.html">Buy Property</a></li>
+                        <li><a href="rent.html">Rent Property</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 4821 Pacific Crest Ave<br>Los Angeles, CA 90017</p>
+                    <p><i class="fas fa-phone"></i> (323) 555-4821</p>
+                    <p><i class="fas fa-envelope"></i> reyvalproperties@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 by Reyval Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Reyval Properties Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help you with all your real estate needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

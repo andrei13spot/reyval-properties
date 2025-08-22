@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Reyval Properties</title>
+    <link rel="icon" type="image/png" href="Reyval Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <p><strong>DISCLAIMER:</strong> This is a test website for demonstration purposes only.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="dropdown">
+                    <a href="properties.html" class="nav-link">Properties <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="rent.html">Rent</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team for all your real estate needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>4821 Pacific Crest Ave<br>Los Angeles, CA 90017</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(323) 555-4821</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>reyvalproperties@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website</h3>
+                            <p>www.reyvalproperties.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="sell">Sell Property</option>
+                                <option value="buy">Buy Property</option>
+                                <option value="rent">Rent Property</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="investment">Investment Properties</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Interactive map coming soon</p>
+                <p>4821 Pacific Crest Ave, Los Angeles, CA 90017</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact Section -->
+    <section class="team-contact">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="john-andrei-photo.png" alt="John Andrei Nañola">
+                    </div>
+                    <div class="member-info">
+                        <h3>John Andrei Nañola</h3>
+                        <p class="position">Founder & CEO</p>
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i> (323) 555-4821<br>
+                            <i class="fas fa-envelope"></i> john@reyvalproperties.com
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="erielle-flores.png" alt="Erielle Flores">
+                    </div>
+                    <div class="member-info">
+                        <h3>Erielle Flores</h3>
+                        <p class="position">Property Specialist</p>
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i> (323) 555-4822<br>
+                            <i class="fas fa-envelope"></i> erielle@reyvalproperties.com
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                    </div>
+                    <div class="member-info">
+                        <h3>Michael Chen</h3>
+                        <p class="position">Property Manager</p>
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i> (323) 555-4823<br>
+                            <i class="fas fa-envelope"></i> michael@reyvalproperties.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Section -->
+    <section class="faq-quick">
+        <div class="container">
+            <h2>Quick Questions?</h2>
+            <div class="quick-questions">
+                <div class="question-item">
+                    <h3>How quickly can I get a cash offer?</h3>
+                    <p>We provide cash offers within 24-48 hours of property evaluation.</p>
+                </div>
+                <div class="question-item">
+                    <h3>Do you work with first-time buyers?</h3>
+                    <p>Absolutely! We specialize in helping first-time buyers navigate the process.</p>
+                </div>
+                <div class="question-item">
+                    <h3>What areas do you serve?</h3>
+                                         <p>We serve Los Angeles and surrounding areas with deep local property knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Reyval Logo.png" alt="Reyval Properties Logo" class="logo-img">
+                    </div>
+                    <p>Modern Living • Prime Locations • Trusted Deals</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="sell.html">Sell Property</a></li>
+                        <li><a href="buy.html">Buy Property</a></li>
+                        <li><a href="rent.html">Rent Property</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 4821 Pacific Crest Ave<br>Los Angeles, CA 90017</p>
+                    <p><i class="fas fa-phone"></i> (323) 555-4821</p>
+                    <p><i class="fas fa-envelope"></i> reyvalproperties@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 by Reyval Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Reyval Properties Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help you with all your real estate needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -310,8 +310,8 @@ body::before {
 
 .btn-outline {
     background-color: transparent;
-    color: var(--red);
-    border: 2px solid var(--red);
+    color: var(--cream);
+    border: 2px solid var(--cream);
     padding: 10px 20px;
     font-size: 14px;
 }
@@ -510,7 +510,7 @@ body::before {
 /* Properties Section */
 .properties {
     padding: 80px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(rgba(57, 47, 81, 0.8), rgba(108, 51, 75, 0.8)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -549,12 +549,12 @@ body::before {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--dark-purple);
+    color: var(--cream);
 }
 
 .properties .section-subtitle {
     text-align: center;
-    color: var(--burgundy);
+    color: var(--cream);
     margin-bottom: 50px;
     font-size: 1.1rem;
 }
@@ -1289,7 +1289,7 @@ body::before {
 }
 
 .rent-hero {
-    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images/unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -2240,13 +2240,13 @@ body::before {
 .rental-application h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--dark-purple);
+    color: var(--cream);
 }
 
 .evaluation-form p,
 .buyer-form p,
 .rental-application p {
-    color: var(--burgundy);
+    color: var(--cream);
     margin-bottom: 40px;
     font-size: 1.1rem;
 }
@@ -2305,11 +2305,11 @@ body::before {
 .cta-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--burgundy);
+    color: var(--cream);
 }
 
 .cta-content p {
-    color: var(--burgundy);
+    color: var(--cream);
     margin-bottom: 30px;
     font-size: 1.1rem;
 }
@@ -2841,4 +2841,423 @@ body::before {
     .hamburger span {
         background-color: var(--dark-purple);
     }
+}
+
+/* Chatbot Typing Indicator */
+.chatbot-messages .typing p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.chatbot-messages .typing i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--burgundy);
+    animation: typing 1.4s infinite ease-in-out;
+}
+
+.chatbot-messages .typing i:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-messages .typing i:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.chatbot-messages .typing i:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes typing {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Enhanced Chatbot Styling */
+.chatbot-window {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--burgundy);
+}
+
+.chatbot-header {
+    background: linear-gradient(135deg, var(--dark-purple), var(--burgundy));
+    color: var(--cream);
+}
+
+.chatbot-toggle {
+    background: linear-gradient(135deg, var(--dark-purple), var(--burgundy));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-input input {
+    border: 2px solid var(--burgundy);
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.chatbot-input input:focus {
+    outline: none;
+    border-color: var(--dark-purple);
+    box-shadow: 0 0 0 3px rgba(108, 51, 75, 0.1);
+}
+
+.chatbot-input button {
+    background: linear-gradient(135deg, var(--dark-purple), var(--burgundy));
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--cream);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chatbot-input button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness for Chatbot */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: 90vw;
+        height: 70vh;
+        right: 5vw;
+        bottom: 100px;
+    }
+    
+    .chatbot-toggle {
+        right: 20px;
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .chatbot-toggle i {
+        font-size: 24px;
+    }
+}
+
+/* Map Section Styling */
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.map-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.map-image img {
+    transition: transform 0.3s ease;
+}
+
+.map-image:hover img {
+    transform: scale(1.05);
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.location-info h3 {
+    color: var(--dark-purple);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-info h3 i {
+    color: var(--burgundy);
+    font-size: 1.8rem;
+}
+
+.location-info p {
+    margin-bottom: 12px;
+    color: var(--dark-purple);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.location-info p strong {
+    color: var(--burgundy);
+    font-weight: 600;
+}
+
+.location-features h4 {
+    color: var(--dark-purple);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.location-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.location-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--dark-purple);
+    font-size: 1rem;
+}
+
+.location-features li i {
+    color: var(--burgundy);
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsiveness for Map Section */
+@media (max-width: 768px) {
+    .map-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .map-image img {
+        height: 250px;
+    }
+    
+    .location-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .location-features h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Sell Page Specific Styles */
+.sell-benefits {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.evaluation-form {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Buy Page Specific Styles */
+.buy-hero {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Rent Page Specific Styles */
+.rent-hero {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Additional Section Backgrounds for Consistency */
+.properties-grid-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-overview {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-properties {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.buying-process {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.buying-services {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.buyer-form {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-rentals {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.rental-process {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.rental-features {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.application-requirements {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.rental-application {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.selling-options {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.sell-process {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.sell-faq {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.sell-cta {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.buy-cta {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-cta {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-cta {
+    background: linear-gradient(rgba(57, 47, 81, 0.9), rgba(108, 51, 75, 0.9)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
 }

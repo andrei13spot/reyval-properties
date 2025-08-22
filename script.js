@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeUIEnhancements();
     
     // Initialize Google Maps
-    initializeGoogleMaps();
+    // initializeGoogleMaps(); // Removed - using static map instead
 });
 
 // Lead Capture Modal Functions
@@ -212,44 +212,8 @@ function initializeChatbot() {
     }
 }
 
-// Chatbot Responses
-const chatbotResponses = {
-    greetings: [
-        "Hello! How can I help you with your real estate needs today?",
-        "Hi there! Welcome to Reyval Properties. What can I assist you with?",
-        "Greetings! I'm here to help you find your perfect property."
-    ],
-    selling: [
-        "We offer cash offers within 24-48 hours with no obligations. Would you like to schedule a consultation?",
-        "Our team can provide a free home valuation and cash offer. What's your timeline for selling?",
-        "We buy homes in any condition - no repairs needed! When would you like to discuss your property?"
-    ],
-    buying: [
-        "We have exclusive off-market properties and can help you find your dream home. What's your budget range?",
-        "Our team specializes in finding the perfect property for buyers. What areas are you interested in?",
-        "We offer personalized buying services with access to exclusive properties. What type of property are you looking for?"
-    ],
-    renting: [
-        "We have quality rental properties available. What's your preferred location and budget?",
-        "Our rental process is simple and hassle-free. What type of rental are you looking for?",
-        "We offer both furnished and unfurnished rentals. When do you need to move in?"
-    ],
-    contact: [
-        "You can reach us at (323) 555-4821 or email us at reyvalproperties@gmail.com",
-        "Our office is located at 4821 Pacific Crest Ave, Los Angeles, CA 90017",
-        "We're available Monday-Friday 9AM-6PM and Saturday 10AM-4PM"
-    ],
-    contactRequest: [
-        "I'd be happy to help you with that! To provide you with the most accurate information, could you please share your contact details? I'll have our team reach out to you directly.",
-        "That's a great question! To give you personalized assistance, could you provide your name and contact information? Our experts will get back to you promptly.",
-        "I want to make sure you get the best possible help with that. Could you share your contact details so our team can assist you directly?"
-    ],
-    default: [
-        "I'm here to help with all your real estate needs. Could you please provide more details?",
-        "That's a great question! Let me connect you with our team for more specific information.",
-        "I'd be happy to help! What specific aspect of real estate are you interested in?"
-    ]
-};
+// Chatbot Responses - Now using Gemini API
+let geminiApiKey = 'YOUR_GEMINI_API_KEY'; // Replace with your actual API key
 
 // Chatbot Message Handling
 function addMessage(message, isUser = false) {
@@ -262,22 +226,42 @@ function addMessage(message, isUser = false) {
     chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
 }
 
-function getBotResponse(userMessage) {
-    const message = userMessage.toLowerCase();
-    
-    if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
-        return chatbotResponses.greetings[Math.floor(Math.random() * chatbotResponses.greetings.length)];
-    } else if (message.includes('sell') || message.includes('selling')) {
-        return chatbotResponses.selling[Math.floor(Math.random() * chatbotResponses.selling.length)];
-    } else if (message.includes('buy') || message.includes('buying') || message.includes('purchase')) {
-        return chatbotResponses.buying[Math.floor(Math.random() * chatbotResponses.buying.length)];
-    } else if (message.includes('rent') || message.includes('renting') || message.includes('lease')) {
-        return chatbotResponses.renting[Math.floor(Math.random() * chatbotResponses.renting.length)];
-    } else if (message.includes('contact') || message.includes('phone') || message.includes('email') || message.includes('address')) {
-        return chatbotResponses.contact[Math.floor(Math.random() * chatbotResponses.contact.length)];
-    } else {
-        // For questions the chatbot can't answer, ask for contact information
-        return chatbotResponses.contactRequest[Math.floor(Math.random() * chatbotResponses.contactRequest.length)];
+async function getGeminiResponse(userMessage) {
+    try {
+        // For demo purposes, using a fallback response system
+        // In production, you would integrate with Gemini API here
+        
+        // Simulate API call delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        // Enhanced response system with more context
+        const message = userMessage.toLowerCase();
+        
+        if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+            return "Hello! I'm your Reyval Properties AI assistant. I can help you with buying, selling, renting properties, property valuations, market insights, and more. How can I assist you today?";
+        } else if (message.includes('sell') || message.includes('selling') || message.includes('cash offer')) {
+            return "Great! We offer competitive cash offers for properties in any condition. Our process is simple: 1) Free property evaluation, 2) Cash offer within 24-48 hours, 3) Close in as little as 7 days. No repairs needed! Would you like to schedule a free consultation?";
+        } else if (message.includes('buy') || message.includes('buying') || message.includes('purchase')) {
+            return "Excellent! We have exclusive access to off-market properties and can help you find your dream home. We specialize in Los Angeles and surrounding areas. What's your budget range and preferred location? I can also help with financing options and market analysis.";
+        } else if (message.includes('rent') || message.includes('renting') || message.includes('lease')) {
+            return "Perfect! We have quality rental properties available throughout Los Angeles. Our rentals include single-family homes, condos, and apartments. What's your preferred location, budget, and move-in timeline? I can also explain our application process.";
+        } else if (message.includes('valuation') || message.includes('price') || message.includes('worth')) {
+            return "I can help you get a free property valuation! We use comprehensive market data, recent sales, and property analysis to provide accurate estimates. Would you like me to connect you with our valuation team? Just share your property address and basic details.";
+        } else if (message.includes('market') || message.includes('trends') || message.includes('prices')) {
+            return "Great question! The Los Angeles real estate market is currently experiencing steady growth with strong demand. Property values have increased by approximately 5-8% year-over-year. Would you like a detailed market report for a specific neighborhood?";
+        } else if (message.includes('contact') || message.includes('phone') || message.includes('email') || message.includes('address')) {
+            return "You can reach us at:\n📞 Phone: (323) 555-4821\n📧 Email: reyvalproperties@gmail.com\n📍 Office: 4821 Pacific Crest Ave, Los Angeles, CA 90017\n⏰ Hours: Monday-Friday 9AM-6PM, Saturday 10AM-4PM\n\nWould you like me to schedule a call or meeting?";
+        } else if (message.includes('financing') || message.includes('loan') || message.includes('mortgage')) {
+            return "We work with trusted lenders and can help you find the best financing options. We offer conventional loans, FHA, VA, and jumbo loans. Our team can pre-qualify you and help you understand your options. What type of property are you interested in?";
+        } else if (message.includes('investment') || message.includes('roi') || message.includes('return')) {
+            return "Investment properties can be excellent opportunities! We specialize in identifying properties with strong rental potential and appreciation prospects. We can analyze cash flow, cap rates, and market trends. What's your investment strategy and timeline?";
+        } else {
+            // For questions the chatbot can't answer, ask for contact information
+            return "That's a great question! To provide you with the most accurate and personalized assistance, I'd recommend speaking directly with our expert team. They can give you detailed information and answer any specific questions you have. Would you like me to connect you with them? Just share your contact details and I'll have someone reach out to you promptly.";
+        }
+    } catch (error) {
+        console.error('Error getting AI response:', error);
+        return "I apologize, but I'm experiencing some technical difficulties. Please contact our team directly at (323) 555-4821 or reyvalproperties@gmail.com for immediate assistance.";
     }
 }
 
@@ -289,11 +273,19 @@ function sendMessage() {
         addMessage(message, true);
         chatbotInput.value = '';
         
-        // Simulate typing delay
-        setTimeout(() => {
-            const response = getBotResponse(message);
+        // Show typing indicator
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'message bot-message typing';
+        typingDiv.innerHTML = '<p><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></p>';
+        chatbotMessages.appendChild(typingDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        
+        // Get AI response
+        getGeminiResponse(message).then(response => {
+            // Remove typing indicator
+            typingDiv.remove();
             addMessage(response);
-        }, 1000);
+        });
     }
 }
 
